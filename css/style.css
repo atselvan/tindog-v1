@@ -51,20 +51,6 @@ h1 {
   left: 15%;
 }
 
-@media (max-width: 991px) {
-  .title-img {
-    width: 60%;
-    transform: rotate(0deg);
-    margin: 7%;
-    position: static;
-    text-align: center;
-  }
-
-  #title .row {
-    text-align: center;
-  }
-}
-
 .menu-btn {
   position: relative;
   display: flex;
@@ -118,6 +104,44 @@ h1 {
 
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@media (max-width: 991px) {
+
+  .title-img {
+    width: 60%;
+    transform: rotate(0deg);
+    margin: 7%;
+    position: static;
+    text-align: center;
+  }
+
+  #title .row {
+    text-align: center;
+  }
+
+}
+
+@media (max-width : 576px) {
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .container-fluid {
+    padding: 3% 10%;
+  }
+
+  .navbar {
+    padding: 0 0 3rem;
+  }
+
+  .navbar-brand {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
 }
 
 /* Features Section */
@@ -174,6 +198,19 @@ h1 {
   padding: 7% 15%;
 }
 
+@media (max-width : 576px) {
+
+  .testimonials-box h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .testimonials-box img {
+    width: 25%;
+  }
+
+}
+
 /* Press Section */
 
 #press {
@@ -185,6 +222,15 @@ h1 {
 #press img {
   width: 15%;
   margin: 0 20px;
+}
+
+@media (max-width : 576px) {
+
+  #press img {
+    width: 30%;
+    margin: 15px 15px;
+  }
+
 }
 
 /* Pricing Section */
@@ -227,6 +273,20 @@ h1 {
   border-color: #fd267d;
 }
 
+@media (max-width : 576px) {
+
+  #pricing h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  #pricing p {
+    color: #8f8f8f;
+    font-size: 1rem;
+  }
+
+}
+
 /* Call To Action Section */
 
 #cta {
@@ -243,6 +303,19 @@ h1 {
 
 #cta .btn-download {
   margin: 5% 1.5% 0 1.5%;
+}
+
+@media (max-width : 576px) {
+
+  #cta {
+    padding: 7% 15% 10%;
+  }
+
+  #cta h3 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
 }
 
 /* Footer Section */
@@ -265,4 +338,18 @@ h1 {
 
 .social-icons:hover {
   color: #343a40;
+}
+
+@media (max-width : 576px) {
+
+  #footer p {
+    margin-top: 5%;
+    font-size: 0.75rem;
+  }
+
+  .social-icons {
+    margin: 0 1.5% 0 1.5%;
+    color: #fff;
+  }
+
 }
