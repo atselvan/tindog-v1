@@ -1,6 +1,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 h1 {
@@ -10,14 +11,19 @@ h1 {
   line-height: 1.5;
 }
 
+.container-fluid {
+  padding: 7% 15%;
+}
+
 /* Title Section */
 
 #title {
   background: linear-gradient(#fd267d, #ff7854);
   color: #fff;
+  text-align: left;
 }
 
-.container-fluid {
+.container-title {
   padding: 3% 15%;
 }
 
@@ -50,6 +56,8 @@ h1 {
   position: relative;
   left: 15%;
 }
+
+/* Hamburger buttion style + animation */
 
 .menu-btn {
   position: relative;
@@ -91,7 +99,6 @@ h1 {
   transform: translateY(16px);
 }
 
-/* ANIMATION */
 .menu-btn.open .menu-btn__burger {
   transform: translateX(-50px);
   background: transparent;
@@ -129,7 +136,7 @@ h1 {
     line-height: 1.2;
   }
 
-  .container-fluid {
+  .container-title {
     padding: 3% 10%;
   }
 
@@ -147,12 +154,10 @@ h1 {
 /* Features Section */
 
 #features {
-  padding: 7%;
   background-color: #fff;
 }
 
 .feature-box {
-  text-align: center;
   padding: 5%;
 }
 
@@ -179,7 +184,6 @@ h1 {
 #testimonials {
   background-color: #ff7854;
   color: #fff;
-  text-align: center;
 }
 
 .testimonials-box h2 {
@@ -192,10 +196,6 @@ h1 {
   width: 10%;
   border-radius: 100%;
   margin: 20px;
-}
-
-.carousel-item {
-  padding: 7% 15%;
 }
 
 @media (max-width : 576px) {
@@ -216,7 +216,6 @@ h1 {
 #press {
   background-color: #ff7854;
   padding-bottom: 7%;
-  text-align: center;
 }
 
 #press img {
@@ -234,11 +233,6 @@ h1 {
 }
 
 /* Pricing Section */
-
-#pricing {
-  padding: 7% 15%;
-  text-align: center;
-}
 
 #pricing h2 {
   font-size: 3rem;
@@ -292,8 +286,6 @@ h1 {
 #cta {
   background: linear-gradient(#ff7854,#fd267d);
   color: #fff;
-  padding: 7% 15% 5%;
-  text-align: center;
 }
 
 #cta h3 {
@@ -322,12 +314,11 @@ h1 {
 
 #footer {
   background-color: #fd267d;
+  color: #fff;
   padding: 0 15% 3%;
-  text-align: center;
 }
 
 #footer p {
-  color: #fff;
   margin-top: 2%;
 }
 
@@ -345,11 +336,6 @@ h1 {
   #footer p {
     margin-top: 5%;
     font-size: 0.75rem;
-  }
-
-  .social-icons {
-    margin: 0 1.5% 0 1.5%;
-    color: #fff;
   }
 
 }
